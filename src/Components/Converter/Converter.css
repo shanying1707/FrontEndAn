@@ -1,0 +1,32 @@
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    > input{
+        margin: 10px;
+    }
+    > span{
+        
+    }
+   
+  }
+
+.btnConvert{
+    background-color: rgb(221, 104, 202);
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+select{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
