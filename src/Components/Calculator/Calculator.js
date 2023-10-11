@@ -48,6 +48,10 @@ const Calculator = () => {
   // const handleDivide = () => {
   //   setResult(parseInt(numberA) / parseInt(numberB))
   // }
+  const inputData = [
+                    {name: 'Number A',value: numberA, handleAction: handleChangeNumberA},
+                    {name: 'Number B',value: numberB, handleAction: handleChangeNumberB}
+                    ]
 
   return (
     <div className='container'>
@@ -55,11 +59,13 @@ const Calculator = () => {
             <h2 className='result'>
                 {result}
             </h2>
-            <Input name="Number A" value={numberA} handleChange={handleChangeNumberA} />
-            <Input name="Number B" value={numberB} handleChange={handleChangeNumberB} />
+            {/* <Input name="Number A" value={numberA} handleChange={handleChangeNumberA} />
+            <Input name="Number B" value={numberB} handleChange={handleChangeNumberB} /> */}
             {/* <input placeholder='Number A' value={numberA} onChange={handleChangeNumberA} type='number'></input>
             <input placeholder='Number B' value={numberB} onChange={handleChangeNumberB} type='number'></input>    */}
-            
+            {
+              inputData.map((item) => <Input name={item.name} value={item.value} handleChange={item.handleAction} /> )
+            }
         </form>
         <div className='btnContainer'>
             {/* <button onClick={() => Display('+')}>+</button>
