@@ -7,7 +7,7 @@ import Random from './Components/Random/Random';
 function App() {
   
   return (
-    <div className="App">
+    <div className='App'>
     {/* <Calculator /> */}
     {/* <CountdownTimer 
     //duration={300 * 1000} 

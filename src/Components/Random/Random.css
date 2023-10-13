@@ -1,0 +1,69 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }   
+.container{
+    margin-top: 30px;
+    border: 1px solid grey;    
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 25px;
+    border: 4px solid darkgoldenrod;
+    > div{
+        display: flex;
+        width: 370px;
+        height: 200px;
+        justify-content: left;
+        align-items: center; 
+        padding-left: 30px; 
+        margin-top: 5px;    
+        font-size: 60px;   
+        cursor: none;
+    }
+    > form {
+        display: flex;
+        flex-wrap: wrap;        
+        width: 200px;
+        height: 50px;
+        justify-content: left;        
+        padding-bottom: 90px;
+        margin-top: 5px;
+       
+        > input {           
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;            
+            padding: 10px 5px 10px 5px;            
+            margin-bottom: 10px;
+            font-size: 14.5px;
+            cursor: help;
+            border: none;
+            border-bottom: 3px solid darkblue; 
+            
+        }
+       
+    }
+    > button{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-size: 30px;
+        background-color: rgb(170, 42, 230);
+        color: white;     
+        border-radius: 10px;     
+         
+    }
+    > button:hover {
+        background-color: blanchedalmond;
+        transition: 0.5s;
+        opacity: 0.8;
+        
+    }
+
+
+}
