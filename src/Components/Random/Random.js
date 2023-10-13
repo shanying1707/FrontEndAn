@@ -4,21 +4,19 @@ import './Random.css'
 function Random() {
   const [max,setMax] = useState('')
   const [min,setMin] = useState('')
-  const [random,setRandom] = useState('0')
+  const [random,setRandom] = useState(0)
 
 
   const handleMax = (e)=>{
-    setMax(e.target.value)
+    setMax(Number(e.target.value))
   }
   const handleMin = (e)=>{
-    setMin(e.target.value)
+    setMin(Number(e.target.value))
   }
-  const handleRandom = () =>{
-    setRandom(Math.floor(Math.random() * (max - min + 1) + min));
-  }
-
-  console.log('max', max)
-  console.log('min', min)
+  const handleRandom = () =>{    
+      setRandom(Math.floor(Math.random() * (max - min ) + min));   
+    }
+      
   return (
     <div className='container'>
         <div>{random}</div>
