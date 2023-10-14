@@ -18,12 +18,13 @@ input::-webkit-inner-spin-button {
         display: flex;
         width: 370px;
         height: 200px;
-        justify-content: left;
+        justify-content: center;
         align-items: center; 
         padding-left: 30px; 
         margin-top: 5px;    
-        font-size: 60px;   
+        font-size: 100px;   
         cursor: none;
+        font-weight: bolder;
     }
     > form {
         display: flex;
@@ -32,8 +33,7 @@ input::-webkit-inner-spin-button {
         height: 50px;
         justify-content: left;        
         padding-bottom: 90px;
-        margin-top: 5px;
-       
+        margin-top: 5px;       
         > input {           
             display: flex;
             flex-wrap: wrap;
@@ -43,13 +43,12 @@ input::-webkit-inner-spin-button {
             font-size: 14.5px;
             cursor: help;
             border: none;
-            border-bottom: 3px solid darkblue; 
-            :focus {
-                border: none;
-            } 
+            border-bottom: 3px solid darkblue;             
         }
-      
-       
+        > input:focus{
+            outline: none;
+        }
+             
     }
     > button{
         width: 50%;
@@ -59,17 +58,15 @@ input::-webkit-inner-spin-button {
         font-size: 30px;
         background-color: rgb(170, 42, 230);
         color: white;     
-        border-radius: 10px;     
-         
+        border-radius: 10px;       
     }
     > button:hover {
         background-color: blanchedalmond;
         transition: 0.5s;
         opacity: 0.8;
-        color: red;
-        transition: 2s ease-in-out;
-        width: 100%
+        color: crimson;
+        transition: 1s ease-in-out;
+        width: 100%;
+        font-weight: bolder;
     }
-
-
 }

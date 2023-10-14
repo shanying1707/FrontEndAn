@@ -5,18 +5,17 @@ function Random() {
   const [max,setMax] = useState('')
   const [min,setMin] = useState('')
   const [random,setRandom] = useState(0)
-
-
-  const handleMax = (e)=>{
+  
+  const handleMax = (e) => {
     setMax(Number(e.target.value))
   }
-  const handleMin = (e)=>{
+  const handleMin = (e) => {
     setMin(Number(e.target.value))
   }
-  const handleRandom = () =>{    
+  const handleRandom = () => {    
       setRandom(Math.floor(Math.random() * (max - min ) + min));   
-    }
-      
+  }
+    
   return (
     <div className='container'>
         <div>{random}</div>
