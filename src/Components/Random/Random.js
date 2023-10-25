@@ -11,11 +11,15 @@ function Random() {
   }
   const handleMin = (e) => {
     setMin(Number(e.target.value))
+    if (min > max){
+      alert('no')
+    }
+    else{}
   }
   const handleRandom = () => {    
-      setRandom(Math.floor(Math.random() * (max - min ) + min));   
+      setRandom(Math.floor(Math.random() * (max - min) + min));   
   }
-    
+    console.log(Math.floor((Math.random() * 10) + 1) +1)
   return (
     <div className='container'>
         <div>{random}</div>
