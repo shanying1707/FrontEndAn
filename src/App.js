@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import User from './Components/User/User';
-import UserPage from './Components/UserPage/UserPage';
+import Buoi19GrandParents from './Components/Buoi19/Buoi19GrandParents';
+import Buoi19Comp1 from './Components/Buoi19/Buoi19Comp';
+
+
+
 
 function App() {
   return (
     <div >
-      <UserPage />
+      <Buoi19Comp1 />
     </div>
   );
 }
