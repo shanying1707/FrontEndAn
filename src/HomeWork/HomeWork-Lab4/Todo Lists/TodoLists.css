@@ -21,7 +21,23 @@
     margin: 0 20px 12px 20px;
     border-radius: 6px;
     height: 60%;
-}
+    > ul{        
+        list-style-type: none;
+        margin: 5px 0px 0px -40px;
+        > li{      
+            display: flex;
+            align-items: center;      
+            padding: 6px 10px 0px 20px;
+            margin: 5px 0px 16px -5px;
+        }
+        > hr{
+            width: 558px;
+            display: flex;
+            float: left;
+            margin-block-start: 0;
+        }    
+    } 
+} 
 
 
 .bot{   
@@ -33,6 +49,7 @@
     > input{
        width: 86%;
        border-radius: 6px;
+       border: none;
     }
     > button{
         position: relative;
@@ -42,15 +59,21 @@
         cursor: pointer;  
         color: #1d0707;
         border: none;  
-        box-shadow: 0 0 5 cyan,0 0 25 cyan;              
-    }  
+                      
+    } 
+    > button:hover{
+        color: #df47d7ec;
+        background-image: radial-gradient(circle farthest-corner at 20% 25%, rgba(3,159,222,5) 20%, rgba(2,224,226,5) 100%);
+        transform-origin: left ;
+        transition: 500ms;
+        transition-duration: 0.7;
+
+        
+    } 
     
     
     
 }
 
-.button:hover{
-    box-shadow: 0 0 5 cyan,
-    0 0 25 cyan,0 0 50 cyan;
-}
+
 
