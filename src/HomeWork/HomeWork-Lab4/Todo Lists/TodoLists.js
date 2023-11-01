@@ -2,8 +2,19 @@ import React from 'react'
 import './TodoLists.css'
 
 function TodoLists() {
+
   return (
-    <div>TodoLists
+    <div className='container'>
+      <div className= 'top'>
+        Todo List
+      </div>
+      <div className='mid'>
+        list
+      </div>
+      <div className='bot'>
+        <input placeholder='Add a new todo here...'/>
+        <button >Add</button>
+      </div>
         
     </div>
   )
